@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+        form{
+            width: fit-content;
+            height: fit-content;
+        }
+        .contact {
+            justify-content: space-between;
+            border-radius: 10px;
+            background-color: aqua;
+            padding: 12px 24px;
+        }
+
+        input {
+    display: block;
+    margin: 5px auto;
+}
+
+label {
+    display: block;
+}
+
+button {
+    padding: 8px 16px;
+    background: lightgreen;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid gray;
+}
+    </style>
+</head>
+
+<body>
+    
+        <form action="https://httpbin.org/post" method="POST">
+            <div class="contact">
+                <h2> Visa Infomation</h2>
+
+                <div class="text">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+    
+    
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+    
+                <div class="message">
+                    <label for="message">message</label>
+                    <input type="message" id="message" name="message" placeholder="Write your message">
+                </div>
+
+                <div>               
+                    <label for="text">CVV</label>
+                    <input type="text" id="cvv" placeholder="***">
+                </div>
+                <div>
+    
+                    <label for="date">Expiry</label>
+                    <input type="date" id="date" >
+                </div>
+    
+    
+                <button type="submit">Submit</button>
+            </div>
+    </form>
+</body>
+
+</html>
